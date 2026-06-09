@@ -16,11 +16,11 @@
 
 ## 今天的目标：搞懂 MCP 怎么用
 
-我注意到仓库里有一个叫 **Codex-Octopus** 的项目，看不太懂，就把链接扔给了 Claude，让它一步步带我走。
+我注意到仓库里有一个叫 **Codex-Octopus** 的项目，看不太懂，就把链接扔给了 ChatGPT（Learning Anything），让它一步步带我走。
 
 操作下来，才明白：**Codex-Octopus 其实是一个 MCP 工具**，专门用来在 Claude 桌面端调用 Codex。
 
-MCP（Model Context Protocol）说白了，就是让 AI 能够直接连接并操作外部工具和文件的一套协议。今天算是对它有了第一手的感觉，但要真正用熟，还需要更多练习。
+MCP（Model Context Protocol）模型上下文协议，说白了，就是让 AI 能够直接连接并操作外部工具和文件的一套协议。今天算是对它有了第一手的感觉，但要真正用熟，还需要更多练习。
 
 ## 顺手做了一个实验：VMark MCP
 
@@ -39,17 +39,16 @@ MCP（Model Context Protocol）说白了，就是让 AI 能够直接连接并操
 ## 附：MCP 工作流程图
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#7C3AED', 'primaryTextColor': '#fff', 'primaryBorderColor': '#5B21B6', 'lineColor': '#6D28D9', 'secondaryColor': '#DDD6FE', 'tertiaryColor': '#F5F3FF'}}}%%
 flowchart TD
-    A([用户发出指令]) --> B[Claude 理解意图]
-    B --> C{需要外部工具？}
-    C -- 否 --> D([直接回复用户])
+    A[用户发出指令] --> B[Claude 理解意图]
+    B --> C{需要操作外部工具？}
+    C -- 否 --> D[直接回复用户]
     C -- 是 --> E[通过 MCP 协议调用工具]
-    E --> F1[VMark · 读写文档]
-    E --> F2[Codex · 运行代码]
-    E --> F3[Gmail · 收发邮件]
-    F1 & F2 & F3 --> G[返回结果给 Claude]
-    G --> B
+    E --> F[MCP Server\n如 VMark / Codex / Gmail]
+    F --> G[执行具体操作\n读文件 / 写文件 / 运行代码]
+    G --> H[返回结果给 Claude]
+    H --> B
+    H --> D
 ```
 
 ---
