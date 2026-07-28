@@ -9,6 +9,8 @@ ai-learning-notes/
 ├── MCP/
 │   ├── MCP三层解释-从简单到专家.md
 │   └── 我是怎么在一天内搞懂MCP的.md
+├── cc-suite/
+│   └── 我是怎么用cc-suite把Claude和Codex接起来的.md
 ├── Concepts/
 │   └── （基础概念笔记，陆续补充）
 └── README.md
@@ -21,6 +23,11 @@ ai-learning-notes/
 |------|------|------|
 | [MCP 三层解释：从简单到专家](./MCP/MCP三层解释-从简单到专家.md) | 从12岁小孩到专家级，三个层次理解 MCP | 2026-03 |
 | [我是怎么在一天内搞懂 MCP 的](./MCP/我是怎么在一天内搞懂MCP的.md) | 实践笔记，通过 Codex Octopus 和 VMark MCP 上手体验 | 2026-06 |
+
+### cc-suite（Claude ↔ Codex 协作）
+| 文章 | 简介 | 日期 |
+|------|------|------|
+| [我是怎么用 cc-suite 把 Claude 和 Codex 接起来的](./cc-suite/我是怎么用cc-suite把Claude和Codex接起来的.md) | 实践笔记，走完 init → audit → implement → verify 一整套流程 | 2026-07 |
 
 ## 🚀 关于这个仓库
 
