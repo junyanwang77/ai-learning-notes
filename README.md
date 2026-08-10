@@ -35,7 +35,7 @@ ai-learning-notes/
 | [Git 版本控制 · 学习地图](<./Git/Git版本控制-mindset（Opus 5）.md>) | Claude Opus 5 | 2026-08 |
 | [Git 版本控制基础](<./Git/Git 版本控制基础（Claude code）.md>) | Claude Code | 2026-08 |
 | [Git 版本控制基础](<./Git/Git版本控制基础（codex）.md>) | Codex | 2026-08 |
-| [Git 版本控制学习地图](<./Git/Git版本控制学习地图（ChatGPT).md>) | ChatGPT | 2026-08 |
+| [Git 版本控制学习地图](<./Git/Git版本控制学习地图（ChatGPT）.md>) | ChatGPT | 2026-08 |
 
 ### 命令行工具
 | 文章 | 生成模型 | 日期 |
