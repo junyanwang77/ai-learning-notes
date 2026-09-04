@@ -11,7 +11,8 @@ ai-learning-notes/
 ├── Git/                              # Git 版本控制 · 学习地图
 ├── command-line/                     # 命令行工具 · 学习地图
 ├── Claude-Code/                      # Claude Code 参数 · 学习地图
-├── testing/                          # 基于测试的开发流程 · 学习地图
+├── test-driven development workflow/ # 基于测试的开发流程 · 学习地图
+├── YAML/                             # YAML · 学习地图
 ├── mindset-generation-prompt-template/   # 生成学习地图用的提示词模板
 └── README.md
 ```
@@ -55,11 +56,16 @@ ai-learning-notes/
 ### 基于测试的开发流程
 | 文章 | 生成模型 | 日期 |
 |------|------|------|
-| [基于测试的开发流程 · 学习地图](<./testing/基于测试的开发流程-mindset（Opus 5）.md>) | Claude Opus 5 | 2026-08 |
+| [基于测试的开发流程 · 学习地图](<./test-driven development workflow/基于测试的开发流程-mindset（Opus 5）.md>) | Claude Opus 5 | 2026-08 |
+
+### YAML
+| 文章 | 生成模型 | 日期 |
+|------|------|------|
+| [YAML · 学习地图](<./YAML/YAML-mindset（Opus 5）.md>) | Claude Opus 5 | 2026-09 |
 
 ## 🗺️ 关于「学习地图」系列
 
-`Git/`、`command-line/`、`Claude-Code/`、`testing/` 这几个目录，用的是同一套方法：
+`Git/`、`command-line/`、`Claude-Code/`、`test-driven development workflow/`、`YAML/` 这几个目录，用的是同一套方法：
 
 - 提示词模板放在 [`mindset-generation-prompt-template/`](./mindset-generation-prompt-template/)
 - 核心假设是**具体操作交给 AI**，所以不从安装、命令、语法讲起
